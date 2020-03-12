@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coincybersec - coin detail</title>
+    <link rel="shortcut icon" href="./public/assets/favicon_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <style>
+        .nav-btn-alt:hover {
+            background-color: #F0F1F2 !important;
+        }
+        .cyber-tab {
+            padding: 10px 40px 10px 10px;
+            font-size: 1.2rem;
+        }
+        .tab-link {
+            color: #0B0B0B !important;
+            text-decoration: none;
+        }
+        .tab-link:hover {
+            color: #5E3DEF !important;
+            text-decoration: none;
+        }
+        .cyber-tab:hover {
+            border-bottom: 4px solid #5E3DEF;
+            color: #5E3DEF;
+        }
+        .tab-link.active {
+            /* border-bottom: 4px solid #5E3DEF; */
+            color: #5E3DEF !important;
+        }
+        .cyber-tab-mobile {
+            padding: 4px 14px 4px 4px;
+            font-size: 1.1rem;
+        }
+        .tab-link-mobile {
+            color: #0B0B0B !important;
+            text-decoration: none;
+        }
+        .tab-link-mobile:hover {
+            color: #5E3DEF !important;
+            text-decoration: none;
+        }
+        .cyber-tab-mobile:hover {
+            border-bottom: 4px solid #5E3DEF;
+            color: #5E3DEF;
+        }
+        .tab-link-mobile.active {
+            /* border-bottom: 4px solid #5E3DEF; */
+            color: #5E3DEF !important;
+        }
+        a .cyber-tab.active {
+            border-bottom: 4px solid #5E3DEF;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Desktop view -->
+        <div class="d-none d-sm-block">
+            <nav style="padding: 20px 80px !important" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img width="352px" height="53px" src="./public/assets/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div style="justify-content: flex-end" class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li style="padding-right:40px;" class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item">
+                            <a class="nav-link" href="reporting.html">List</a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 80px !important">
+                            <button class="btn btn-danger" style="background-color: #FF3D71 !important" type="submit">ICO/IEO</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile view -->
+        <div class="d-md-none d-lg-none d-xl-none">
+            <nav style="padding: 10px !important" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img width="180px" height="28px" src="./public/assets/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div style="justify-content: flex-end" class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li style="padding-right:40px;" class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item">
+                            <a class="nav-link" href="reporting.html">List</a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-danger" style="background-color: #FF3D71 !important" type="submit">ICO/IEO</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Desktop view -->
+        <div class="d-none d-lg-block">
+            <div class="row" style="padding: 60px 60px 0px 60px;">
+                    <div class="col-md-8">
+                        <div class="row" style="display: flex; justify-content: space-between;">
+                            <div style="padding-top: 30px;">
+                                <img width="61px" height="61px" src="./public/assets/BTC.png" />
+                                <span style="font-weight: 500; font-size: 38px; vertical-align: middle"><b>Bitcoin </b><span style="color: #8C8C8C; font-size: 28px">(BTC)</span></span>
+                            </div>
+                            <div style="width: 240px; height: 140px; box-shadow: 0 8px 16px rgba(0,0,0,.1); border-radius: 6px;">
+                                <div style="padding: 20px;">
+                                    <div><small><b>GLOBAL RATING</b></small></div>
+                                        <div style="display: flex; justify-content: space-between">
+                                            <span><img width="21px" height="21px" src="./public/assets/rating_icon.png" />&nbsp;<b style="vertical-align:middle;">4.7</b></span>
+                                            <span>
+                                                <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                                <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                                <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                                <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                                <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                            </span>
+                                        </div>
+                                        <hr style="color: #F2F5F7;"/>
+                                        <div style="display: flex; justify-content: space-between">
+                                            <span style="font-size: 28px; margin-top: -12px;"><b>Secure</b></span>
+                                            <span>
+                                                <small style="color: #4BE2AF">Recommended</small>
+                                            </span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div style="padding-top: 30px;">
+                                <button type="button" class="btn btn-primary" style="background-color: #3365FF !important;">Incident</button> &nbsp;&nbsp;
+                                <button type="button" class="btn btn-primary" style="background-color: #3365FF !important;">Issue Report</button> &nbsp;&nbsp;
+                                <button type="button" class="btn btn-primary" style="background-color: #3365FF !important;">Phishing</button> &nbsp;&nbsp;
+                                <button type="button" class="btn btn-primary" style="background-color: #3365FF !important;">DDOS</button> &nbsp;&nbsp;
+                            </div>
+                        </div>
+                        <div style="padding: 40px 0px; font-size: 22px;">
+                            <p style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding-left: 120px;">
+                        <div style="border: 1px solid #D0D0D0; border-radius: 8px; width: 420px;">
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #3466FF"><img  width="21px" height="21px" src="./public/assets/deep_scan.png" />&nbsp;&nbsp; <span style="vertical-align: middle;">Deep Scan:</span></h6></div>
+                                <div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <p style="color: rgb(90, 88, 88)"><small>4.7/5</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #3466FF"><img width="21px" height="21px" src="./public/assets/infrastructure.png" /> &nbsp;&nbsp;<span style="vertical-align: middle; ">Infrastructure Rating:</span></h6></div>
+                                <div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <p style="color: rgb(90, 88, 88)"><small>4.7/5</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px;">
+                                <div><h6 style="color: #3466FF"><img width="21px" height="26px" src="./public/assets/user_experience.png" /> &nbsp;&nbsp;<span style="vertical-align: middle; ">User Experience Rating:</span></h6></div>
+                                <div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                        <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <p style="color: rgb(90, 88, 88)"><small>4.7/5</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" style="padding-top: 20px;">
+                            <button type="button" class="btn btn-primary" style="border-radius: 8px; border-color: #5E3DEF; background-color: #5E3DEF; font-weight:600; height:70px; width: 420px; font-size: 24px;">VISIT WEBSITE</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="row" style="padding: 0px 60px 60px 60px;">
+                <div class="col-md-8">
+                    <ul class="nav nav-tabs">
+                        <li class="cyber-tab"><a class="tab-link active" data-toggle="tab" href="#charts"> <img width="21px" height="21px" src="./public/assets/chart.png" />&nbsp;&nbsp;<span style="vertical-align: middle">Security Charts</span></a></li>
+                        <li class="cyber-tab"><a class="tab-link" data-toggle="tab" href="#report"> <img width="19px" height="21px" src="./public/assets/report.png" />&nbsp;&nbsp;<span style="vertical-align: middle">Cybersecurity Report</span></a></li>
+                    </ul>
+                    
+                    <div class="tab-content">
+                    <div id="charts" class="tab-pane fade in active show">
+                        <div style="padding: 40px 20px;">
+                            <canvas id="myChart" width="100%" height="40px"></canvas>
+                        </div>
+                    </div>
+                    <div id="report" class="tab-pane fade" style="padding: 40px 0px;">
+                        <div><h4 style="font-weight: bold; padding-bottom: 10px;">Bitcoin Cybersecurity</h4></div>
+                        <div style="font-size: 22px;">
+                            <p style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                            <p style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                            <p style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-left: 120px;">
+                    <div><h4 style="font-weight: bold; padding-bottom: 10px;">Bitcoin Statistics</h4></div>
+                    <div style="border: 1px solid #D0D0D0; border-radius: 8px; width: 420px;">
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #535353">Global Rating:</h6></div>
+                            <div>
+                                <p style="color: #535353">5/5</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #535353">Deep Scan:</h6></div>
+                            <div>
+                                <p style="color: #535353">3.5/5</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #535353">Infrastructure Rating:</h6></div>
+                            <div>
+                                <p style="color: #535353">70%</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #535353">User Experience Rating:</h6></div>
+                            <div>
+                                <p style="color: #535353">4/5</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #535353">Global Rating:</h6></div>
+                            <div>
+                                <p style="color: #535353">4/5</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #535353">Deep Scan:</h6></div>
+                            <div>
+                                <p style="color: #535353">Active</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #535353">Infrastructure Rating:</h6></div>
+                            <div>
+                                <p style="color: #535353">50%</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px;">
+                            <div><h6 style="color: #535353">User Experience Rating:</h6></div>
+                            <div>
+                                <p style="color: #535353">3/5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile view -->
+        <div class=" d-lg-none d-xl-none">
+            <div class="row" style="padding: 14px;">
+                <div class="col">
+                    <div class="row" style="display: flex; flex-direction: column; align-content: center; align-items: center;">
+                        <div style="padding-top: 10px; padding-bottom: 10px;">
+                            <img width="41px" height="41px" src="./public/assets/BTC.png" />
+                            <span style="font-weight: 400; font-size: 28px; vertical-align: middle"><b>Bitcoin </b><span style="color: #8C8C8C; font-size: 18px">(BTC)</span></span>
+                        </div>
+                        <div style="width: 240px; height: 140px; box-shadow: 0 8px 16px rgba(0,0,0,.1);">
+                            <div style="padding: 20px;">
+                                <div><small><b>GLOBAL RATING</b></small></div>
+                                    <div style="display: flex; justify-content: space-between">
+                                        <span><img width="21px" height="21px" src="./public/assets/rating_icon.png" />&nbsp;<b style="vertical-align: middle">4.7</b></span>
+                                        <span>
+                                            <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                            <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                            <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                            <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                            <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                        </span>
+                                    </div>
+                                    <hr style="color: #F2F5F7;"/>
+                                    <div style="display: flex; justify-content: space-between">
+                                        <span style="font-size: 28px; margin-top: -12px;"><b>Secure</b></span>
+                                        <span>
+                                            <small style="color: #4BE2AF">Recommended</small>
+                                        </span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div style="padding-top: 30px;">
+                            <button type="button" class="btn-sm btn btn-primary" style="background-color: #3365FF !important;">Incident</button> &nbsp;
+                            <button type="button" class="btn btn-sm btn-primary" style="background-color: #3365FF !important;">Issue Report</button> &nbsp;
+                            <button type="button" class="btn btn-sm btn-primary" style="background-color: #3365FF !important;">Phishing</button> &nbsp;
+                            <button type="button" class="btn btn-sm btn-primary" style="background-color: #3365FF !important;">DDOS</button>
+                        </div>
+                    </div>
+                    <div style="padding: 40px 0px; font-size: 20px;">
+                        <p style="text-align: justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div style="border: 1px solid #D0D0D0; border-radius: 8px; width: 100%;">
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #3466FF"> <img width="21px" height="21px" src="./public/assets/deep_scan.png" />&nbsp; <span style="vertical-align: middle">Deep Scan:</span></h6></div>
+                            <div>
+                                <div style="display: flex; justify-content: center;">
+                                    <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <p style="color: rgb(90, 88, 88)"><small>4.7/5</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                            <div><h6 style="color: #3466FF"> <img width="21px" height="18px" src="./public/assets/infrastructure.png" />&nbsp; <span style="vertical-align: middle">Infrastructure Rating:</span></h6></div>
+                            <div>
+                                <div style="display: flex; justify-content: center;">
+                                    <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <p style="color: rgb(90, 88, 88)"><small>4.7/5</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px;">
+                            <div><h6 style="color: #3466FF"> <img width="21px" height="21px" src="./public/assets/user_experience.png" />&nbsp; <span style="vertical-align: middle">User Experience Rating:</span></h6></div>
+                            <div>
+                                <div style="display: flex; justify-content: center;">
+                                    <img width="10px" height="10px" src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="10px" height="10px"  src="./public/assets/full_star.png" />
+                                    <img width="7px" height="10px"  src="./public/assets/half_star.png" />
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <p style="color: rgb(90, 88, 88)"><small>4.7/5</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding-top: 20px;">
+                        <button type="button" class="btn btn-primary" style="border-radius: 8px; border-color: #5E3DEF; background-color: #5E3DEF; font-weight:400; height:70px; width: 100%; font-size: 20px;">VISIT WEBSITE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 10px;">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-tabs">
+                            <li class="cyber-tab-mobile"><a class="tab-link-mobile active" data-toggle="tab" href="#chartsMobile"><img width="12px" height="14px" src="./public/assets/chart.png"/>&nbsp;<span style="vertical-align: middle">Security Charts</span></a></li>
+                            <li class="cyber-tab-mobile"><a class="tab-link-mobile" data-toggle="tab" href="#reportMobile"><img width="12px" height="14px" src="./public/assets/report.png"/>&nbsp;<span style="vertical-align: middle">Cybersecurity Report</span></a></li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div id="chartsMobile" class="tab-pane fade in active show" style="padding: 10px 0px;">
+                                <div>
+                                    <canvas  id="myChart2" width="100%" height="40px"></canvas>
+                                </div>
+                            </div>
+                            <div id="reportMobile" class="tab-pane fade" style="padding: 10px 0px;">
+                                <div><h4 style="font-weight: bold; padding-bottom: 4px;">Bitcoin Cybersecurity</h4></div>
+                                <div style="font-size: 18px;">
+                                    <p style="text-align: justify">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                    <p style="text-align: justify">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                    <p style="text-align: justify">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="width: 100% !important;">
+                    <div class="col-12">
+                        <div><h4 style="font-weight: bold; padding-bottom: 10px;">Bitcoin Statistics</h4></div>
+                        <div style="border: 1px solid #D0D0D0; border-radius: 8px; width: 100%;">
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #535353">Global Rating:</h6></div>
+                                <div>
+                                    <p style="color: #535353">5/5</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #535353">Deep Scan:</h6></div>
+                                <div>
+                                    <p style="color: #535353">3.5/5</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #535353">Infrastructure Rating:</h6></div>
+                                <div>
+                                    <p style="color: #535353">70%</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #535353">User Experience Rating:</h6></div>
+                                <div>
+                                    <p style="color: #535353">4/5</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #535353">Global Rating:</h6></div>
+                                <div>
+                                    <p style="color: #535353">4/5</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #535353">Deep Scan:</h6></div>
+                                <div>
+                                    <p style="color: #535353">Active</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px; border-bottom: 1px solid #D0D0D0;">
+                                <div><h6 style="color: #535353">Infrastructure Rating:</h6></div>
+                                <div>
+                                    <p style="color: #535353">50%</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 20px 20px 0px 20px;">
+                                <div><h6 style="color: #535353">User Experience Rating:</h6></div>
+                                <div>
+                                    <p style="color: #535353">3/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12" style="padding: 20px; display: flex; justify-content:center;background-color: #3F289F">
+            <div class="col-md-3"></div>
+            <div class="col-md-1"><img class="float-right" width="76px" height="76px" src="./public/assets/C_logo.png" alt=""></div>
+            <div class="col-md-4" style="text-align: center; margin-top: 12px">
+                <p style="color: #FFF; font-size: 22px;">Coincybersec announcements AD banner </p>
+            </div>
+            <div class="col-md-1"><button class="btn btn-danger float-left" style=" margin-top: 12px; background-color: #FF3D71 !important" type="submit">Sign Up</button></div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div style="padding: 20px; display: flex; align-items: flex-end; flex-grow: 1; flex-direction: column; align-items: center; align-content: center; background-image: url('./public/assets/bg.svg')">
+            <div style="color: #FFF; font-size: 20px; padding-top: 10px; margin-bottom: 0px; padding-bottom:0px;">Total Projects Evaluated: </div>
+            <div style="color: #FFF; font-size: 48px; padding-bottom: 30px; font-weight: bold; margin-top: -10px; padding-top:0px;">2,000 </div>
+            <div style="color: #FFF; font-size: 18px; margin-bottom: 3px;">Subscribe to our newsletter </div>
+            <div class="d-none d-sm-block">
+                <div style="padding-bottom: 10px">
+                    <input style="width: 480px !important" type="text" class="form-control" placeholder="Enter Email" />
+                </div>
+            </div>
+            <div class="d-md-none d-lg-none d-xl-none">
+                <div style="padding-bottom: 10px">
+                    <input style="width: 280px !important" type="text" class="form-control" placeholder="Enter Email" />
+                </div>
+            </div>
+            <div style="padding-bottom: 20px;">
+                <button class="btn btn-danger" style="background-color: #FF3D71 !important" type="submit">Subscribe Now</button>
+            </div>
+        </div>
+
+        <!-- Desktop view -->
+        <div class="col-md-12 d-none d-lg-block">
+            <div style="display: flex; justify-content: space-between; padding: 80px 180px 0 180px; min-height: 420px;">
+                <span>
+                    <img src="./public/assets/secblack.png" style="width: 180px; height: 27px; margin-bottom: 4px;" alt="logo" />
+                    <p style="margin-top: 0px">All right reserved ©️ 2019 - 2020. coincybersec</p>
+                </span>
+                <span>
+                    <h5>Resources</h5>
+                    <p><a href="#" style="text-decoration: none">Crypto Security API</a></p>
+                    <p><a href="#" style="text-decoration: none">Cryptosecurity Newsletter</a></p>
+                    <p><a href="#" style="text-decoration: none">Cybersec Events</a></p>
+                    <p><a href="#" style="text-decoration: none">Cybersec Glossary</a></p>
+                    <p><a href="#" style="text-decoration: none">Trading Safe</a></p>
+                </span>
+                <span>
+                    <h5>Useful Links</h5>
+                    <p><a href="#" style="text-decoration: none">Methodology</a></p>
+                    <p><a href="#" style="text-decoration: none">Careers</a></p>
+                    <p><a href="#" style="text-decoration: none">FAQ</a></p>
+                    <p><a href="#" style="text-decoration: none">Books</a></p>
+                </span>
+                <span>
+                    <img width="33px" height="33px" src="./public/assets/telegram.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="31px" height="31px" src="./public/assets/instagram_.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="37px" height="30px" src="./public/assets/twitter.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="16px" height="29px" src="./public/assets/facebook.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="39px" height="32px" src="./public/assets/reddit.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="31px" height="31px" src="./public/assets/linkedin.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                </span>
+            </div>
+        </div>
+
+        <!-- Mobile view -->
+        <div class="col-md-12 d-lg-none d-xl-none">
+            <div style="display: flex; flex-direction: column; align-content: space-between; align-items: center; padding: 20px 0 0 0; min-height: 220px;">
+                <div style="padding-bottom: 4px;">
+                    <img src="./public/assets/secblack.png" style="width: 140px; height: 22px; margin-bottom: 4px;" alt="logo" />
+                    <p style="margin-top: 0px; text-align: left; font-size: 12px;">All right reserved ©️ 2019 - 2020. coincybersec</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px">
+                    <span style="padding: 2px; margin-right: 30px">
+                        <h6 style="padding-bottom: 4px">Resources</h6>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Crypto Security API</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Cryptosecurity Newsletter</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Cybersec Events</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Cybersec Glossary</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Trading Safe</a></p>
+                    </span>
+                    <span style="padding: 2px;">
+                        <h6 style="padding-bottom: 4px">Useful Links</h6>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Methodology</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Careers</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">FAQ</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Books</a></p>
+                    </span>
+                </div>
+
+                <span style="padding: 0px 20px 20px 20px; display: flex;">
+                    <img width="23px" height="23px" src="./public/assets/telegram.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="21px" height="21px" src="./public/assets/instagram_.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="27px" height="20px" src="./public/assets/twitter.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="11px" height="19px" src="./public/assets/facebook.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="29px" height="22px" src="./public/assets/reddit.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="21px" height="21px" src="./public/assets/linkedin.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="./public/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/Chart.min.js"></script>
+
+    <script>
+       var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        var ctx2 = document.getElementById('myChart2');
+        var myChart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

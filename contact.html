@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coincybersec - contact us</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="shortcut icon" href="./public/assets/favicon_1.ico" type="image/x-icon">
+    <style>
+        .nav-btn-alt:hover {
+            background-color: #F0F1F2 !important;
+        }
+        
+        .nav-link-desktop {
+            color: #fff !important
+        }
+        
+        .nav-link-desktop:hover {
+            color: #e9ecef !important;
+        }
+        
+        .nav-item-desktop.active a {
+            border-bottom: 1px solid #fff !important;
+        }
+        
+        .form {
+            position: absolute;
+            top: 260px;
+            right: 100px;
+            width: 100%;
+            height: 100%;
+            padding: 2%;
+            z-index: 2;
+            background-size: 100%;
+            box-shadow: 0 8px 16px rgba(0,0,0,.1);
+        }
+        .form-mobile {
+            box-shadow: 0 8px 16px rgba(0,0,0,.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="flex-grow: 1; background-color: #F5F7F9">
+        <div class="d-none d-lg-block">
+            <nav style="padding: 20px 80px !important; background-color: #5E3DEF; padding-bottom: 300px !important;" class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img width="352px" height="53px" src="./public/assets/white_icon.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div style="justify-content: flex-end" class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li style="padding-right:40px;" class="nav-item-desktop">
+                            <a class="nav-link-desktop" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item-desktop">
+                            <a class="nav-link-desktop" href="reporting.html">List</a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item-desktop">
+                            <a class="nav-link-desktop" href="#">About Us</a>
+                        </li>
+                        <li style="padding-right:40px;" class="nav-item-desktop active">
+                            <a class="nav-link-desktop" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item-desktop" style="margin-left: 80px !important">
+                            <button class="btn btn-danger" style="background-color: #FF3D71 !important" type="submit">ICO/IEO</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- The div below is for mobile responsiveness. All class "d-md-none d-lg-none d-xl-none"-->
+
+        <div class="d-lg-none d-xl-none">
+            <nav style="padding: 10px !important" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img width="180px" height="28px" src="./public/assets/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div style="justify-content: flex-end" class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li style="padding-right:40px;" class="nav-item>
+                            <a class=" nav-link " href="index.html ">Home <span class="sr-only ">(current)</span></a>
+                        </li>
+                        <li style="padding-right:40px; " class="nav-item ">
+                            <a class="nav-link " href="reporting.html ">List</a>
+                        </li>
+                        <li style="padding-right:40px; " class="nav-item ">
+                            <a class="nav-link " href="# ">About Us</a>
+                        </li>
+                        <li style="padding-right:40px; " class="nav-item active "">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-danger" style="background-color: #FF3D71 !important" type="submit">ICO/IEO</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Desktop view -->
+        <div class="d-none d-lg-block" style="padding-bottom: 520px; background-color: #F5F7F9">
+            <div style="padding-right: 80px">
+                <div class="col-md-5" style="padding: 100px 200px 60px 100px;">
+                    <h3 style="color: #3365FF; padding-bottom: 20px; font-size: 65px; font-weight:bold;">Contact Us</h3>
+                    <p style="font-size: 25px"><b>Questions, bug reports, feedback, feature requests - we're here for it all.</b></p>
+                    <p style="font-size: 25px">If that's not possible, we'd still like to hear from you.</p>
+                </div>
+                <div class="col-md-5 form" style="background-color: #fff; border-radius: 12px; width: 100%; height: 1000px; padding: 60px 60px; font-size: 18px; color: #7A7A7A">
+                    <div class="form-group" style="padding-bottom: 30px">
+                        <label for="inputEmail1">Your Email Address</label>
+                        <input type="email" class="form-control form-control-lg" id="inputEmail1" style="height: 62px; border-radius: 8px;">
+                    </div>
+                    <div class="form-group" style="padding-bottom: 30px">
+                        <label for="subject">Subject</label>
+                        <select class="form-control form-control-lg" id="subject" style="height: 62px; border-radius: 8px;">
+                        <option>Incident</option>
+                        <option>Issue Report</option>
+                        <option>Phishing</option>
+                        <option>DDOS</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="padding-bottom: 30px">
+                        <label for="message">How can we help</label>
+                        <textarea class="form-control" id="message" rows="16" style="border-radius: 8px;"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary" style="border-radius: 8px; background-color: #3365FF; font-weight:600; height:50px; width: 140px; font-size: 18px;">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile view -->
+        <div class="d-lg-none d-xl-none">
+            <div style="padding: 20px 20px 40px 20px">
+                <div class="col-12" style="padding: 10px; text-align: justify">
+                    <h3 style="color: #3365FF; padding-bottom: 8px; font-size: 42px; font-weight:bold;">Contact Us</h3>
+                    <p style="font-size: 18px"><b>Questions, bug reports, feedback, feature requests - we're here for it all.</b></p>
+                    <p style="font-size: 18px">If that's not possible, we'd still like to hear from you.</p>
+                </div>
+                <div class="col-md-12 form-mobile" style="background-color: #fff; border-radius: 10px; width: 100%; padding: 12px; font-size: 18px; color: #7A7A7A">
+                    <div class="form-group" style="padding-bottom: 10px">
+                        <label for="inputEmail1">Your Email Address</label>
+                        <input type="email" class="form-control form-control-lg" id="inputEmail1" style="height: 62px; border-radius: 8px;">
+                    </div>
+                    <div class="form-group" style="padding-bottom: 20px">
+                        <label for="subject">Subject</label>
+                        <select class="selectpicker form-control form-control-lg" id="subject" style="height: 62px; border-radius: 8px;">
+                        <option>Incident</option>
+                        <option>Issue Report</option>
+                        <option>Phishing</option>
+                        <option>DDOS</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="padding-bottom: 20px">
+                        <label for="message">How can we help</label>
+                        <textarea class="form-control" id="message" rows="10" style="border-radius: 8px;"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary" style="border-radius: 8px; background-color: #3365FF; font-weight:600; height:50px; width: 120px; font-size: 22px;">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Desktop view -->
+        <div class="col-md-12 d-none d-lg-block">
+            <div style="display: flex; justify-content: space-between; padding: 80px 180px 0 180px; min-height: 420px;">
+                <span>
+                    <img src="./public/assets/secblack.png" style="width: 180px; height: 27px; margin-bottom: 4px;" alt="logo" />
+                    <p style="margin-top: 0px">All right reserved ©️ 2019 - 2020. coincybersec</p>
+                </span>
+                <span>
+                    <h5>Resources</h5>
+                    <p><a href="#" style="text-decoration: none">Crypto Security API</a></p>
+                    <p><a href="#" style="text-decoration: none">Cryptosecurity Newsletter</a></p>
+                    <p><a href="#" style="text-decoration: none">Cybersec Events</a></p>
+                    <p><a href="#" style="text-decoration: none">Cybersec Glossary</a></p>
+                    <p><a href="#" style="text-decoration: none">Trading Safe</a></p>
+                </span>
+                <span>
+                    <h5>Useful Links</h5>
+                    <p><a href="#" style="text-decoration: none">Methodology</a></p>
+                    <p><a href="#" style="text-decoration: none">Careers</a></p>
+                    <p><a href="#" style="text-decoration: none">FAQ</a></p>
+                    <p><a href="#" style="text-decoration: none">Books</a></p>
+                </span>
+                <span>
+                    <img width="33px" height="33px" src="./public/assets/telegram.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="31px" height="31px" src="./public/assets/instagram_.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="37px" height="30px" src="./public/assets/twitter.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="16px" height="29px" src="./public/assets/facebook.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="39px" height="32px" src="./public/assets/reddit.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="31px" height="31px" src="./public/assets/linkedin.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                </span>
+            </div>
+        </div>
+
+        <!-- Mobile view -->
+        <div class="col-md-12 d-lg-none d-xl-none">
+            <div style="display: flex; flex-direction: column; align-content: space-between; align-items: center; padding: 20px 0 0 0; min-height: 220px;">
+                <div style="padding-bottom: 4px;">
+                    <img src="./public/assets/secblack.png" style="width: 140px; height: 22px; margin-bottom: 4px;" alt="logo" />
+                    <p style="margin-top: 0px; text-align: left; font-size: 12px;">All right reserved ©️ 2019 - 2020. coincybersec</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px">
+                    <span style="padding: 2px; margin-right: 30px">
+                        <h6 style="padding-bottom: 4px">Resources</h6>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Crypto Security API</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Cryptosecurity Newsletter</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Cybersec Events</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Cybersec Glossary</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Trading Safe</a></p>
+                    </span>
+                    <span style="padding: 2px;">
+                        <h6 style="padding-bottom: 4px">Useful Links</h6>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Methodology</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Careers</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">FAQ</a></p>
+                        <p style="line-height: 5px"><a href="#" style="text-decoration: none; font-size: 12px;">Books</a></p>
+                    </span>
+                </div>
+
+                <span style="padding: 0px 20px 20px 20px; display: flex;">
+                    <img width="23px" height="23px" src="./public/assets/telegram.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="21px" height="21px" src="./public/assets/instagram_.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="27px" height="20px" src="./public/assets/twitter.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="11px" height="19px" src="./public/assets/facebook.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="29px" height="22px" src="./public/assets/reddit.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="21px" height="21px" src="./public/assets/linkedin.png"/> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="./public/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
